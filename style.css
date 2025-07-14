@@ -15,15 +15,13 @@ body{
     background-color: #6366f1;
 }
 
-.btn-default{
+.btn-default, .btn-create, .btn-login{
     background-color: #6366f1;
-    display: flex;
     align-items: center;
     border: none;
     padding: 8px 12px;
     border-radius: 8px;
     font-size: 15px;
-    font-weight: 500;
     color: #ffffff;
     cursor: pointer;
     gap: 8px;
@@ -34,6 +32,8 @@ body{
 
 .btn-deafult:hover{
     background-color: #818cf8;
+    font-weight: 500;
+
 }
 
 #form_container{
@@ -70,17 +70,10 @@ body{
     bottom: 0;
 }
 
-#form{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 32px;
-    height: 100%;
-}
-
-#input_container{
+#form-cadastro{
     display: grid;
-    gap: 24px;
+    gap: 20px;
+    height: 100%;
 }
 
 .form-label{
@@ -107,7 +100,6 @@ body{
 
 .form-control{
     padding: 10px;
-    width: 100px;
     border: none;
     border-radius: 8px;
 }
@@ -147,6 +139,10 @@ body{
 
 .form-control[type="radio"]{
     accent-color: #6366f1;
+}
+
+.create-account{
+    margin: 5px;
 }
 
 @media screen and (max-width: 500px){
